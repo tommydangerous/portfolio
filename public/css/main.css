@@ -1,4 +1,9 @@
 body {
-  background-color: red; }
+  background-color: #fafafa; }
+
+header {
+  background-color: #fafff5; }
+  header .header {
+    height: 50px; }
 
 /*# sourceMappingURL=main.css.map */

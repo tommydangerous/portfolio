@@ -17,12 +17,17 @@
   "devDependencies": {
     "browserify": "~6.2.0",
     "envify": "~3.0.0",
+    "gulp": "^3.8.11",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
     "reactify": "^0.15",
     "watchify": "~2.1.0"
   },
   "scripts": {
     "start": "watchify -o public/js/bundle.js -v -d .",
-    "build": "browserify . | uglifyjs -cm > public/js/bundle.min.js"
+    "build": "browserify . | uglifyjs -cm > public/js/bundle.min.js",
+    "gulp": "gulp",
+    "watch": "sass --watch public/scss:public/css"
   },
   "browserify": {
     "transform": [

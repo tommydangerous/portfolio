@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
   <title>{{title}}</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-  {{{body}}}
+  <div class="wrapper">
+    <div id="header-mount"></div>
+    <div class="content">
+      {{{body}}}
+    </div>
+  </div>
+  <div id="footer-mount"></div>
   <script src="js/bundle.js"></script>
 </body>
 </html>
