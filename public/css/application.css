@@ -171,15 +171,107 @@ footer {
         padding: 0 10px;
         text-align: center; }
 
+section.contact {
+  background-color: #3c3c3c; }
+  @media screen and (min-width: 0px) and (max-width: 320px) {
+    section.contact {
+      padding-top: 40px; } }
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    section.contact {
+      padding-top: 40px; } }
+  @media screen and (min-width: 640px) {
+    section.contact {
+      padding-top: 80px; } }
+  section.contact .items {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    section.contact .items:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (min-width: 0px) and (max-width: 320px) {
+      section.contact .items .contact-item {
+        margin-bottom: 40px;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        section.contact .items .contact-item:last-child {
+          margin-right: 0; }
+        section.contact .items .contact-item:nth-child(2n) {
+          margin-right: 0; }
+        section.contact .items .contact-item:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (min-width: 320px) and (max-width: 640px) {
+      section.contact .items .contact-item {
+        margin-bottom: 40px;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        section.contact .items .contact-item:last-child {
+          margin-right: 0; }
+        section.contact .items .contact-item:nth-child(2n) {
+          margin-right: 0; }
+        section.contact .items .contact-item:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (min-width: 640px) {
+      section.contact .items .contact-item {
+        padding-bottom: 80px;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%; }
+        section.contact .items .contact-item:last-child {
+          margin-right: 0; }
+        section.contact .items .contact-item:nth-child(4n) {
+          margin-right: 0; }
+        section.contact .items .contact-item:nth-child(4n+1) {
+          clear: left; } }
+    section.contact .items .contact-item a {
+      display: block;
+      height: 40px;
+      margin: 0 auto;
+      width: 40px; }
+      section.contact .items .contact-item a img {
+        height: 100%;
+        width: 100%; }
+
 .portfolio {
-  padding: 160px 0; }
+  padding-top: 160px; }
+  @media screen and (min-width: 0px) and (max-width: 320px) {
+    .portfolio {
+      padding-bottom: 80px; } }
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    .portfolio {
+      padding-bottom: 80px; } }
   .portfolio .items {
     margin: 0 auto;
     max-width: 960px;
-    width: 100%; }
+    width: 100%;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .portfolio .items:after {
+      content: "";
+      display: table;
+      clear: both; }
     .portfolio .items .portfolio-item {
       display: block; }
-      @media screen and (min-width: 320px) {
+      @media screen and (min-width: 0px) and (max-width: 320px) {
+        .portfolio .items .portfolio-item {
+          margin-bottom: 80px;
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          .portfolio .items .portfolio-item:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 320px) and (max-width: 640px) {
         .portfolio .items .portfolio-item {
           margin-bottom: 80px;
           float: left;

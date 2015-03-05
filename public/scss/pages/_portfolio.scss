@@ -1,14 +1,25 @@
 $image-padding: $spacing * 1.5;
 $image-size: $spacing * 8;
 .portfolio {
-  padding: $image-size 0;
+  padding-top: $image-size;
+  @include screen-xs {
+    padding-bottom: $image-size * 0.5;
+  }
+  @include screen-sm {
+    padding-bottom: $image-size * 0.5;
+  }
   .items {
     margin: 0 auto;
     max-width: $width;
     width: 100%;
+    @include outer-container;
     .portfolio-item {
       display: block;
-      @include screen-sm-min {
+      @include screen-xs {
+        margin-bottom: $image-size * 0.5;
+        @include span-columns(12);
+      }
+      @include screen-sm {
         margin-bottom: $image-size * 0.5;
         @include span-columns(12);
       }
