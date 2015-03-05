@@ -1,3 +1,6 @@
+#footer-mount {
+  margin-top: -1 * ($font-size-small-2 + ($spacing * 2));
+}
 footer {
   background-color: $gray-dark-1;
   color: $white;
@@ -8,7 +11,9 @@ footer {
     width: 100%;
     .copyright {
       p {
-        font-size: $font-size-normal-1;
+        font-size: $font-size-small-2;
+        line-height: $font-size-small-2;
+        padding: $spacing 0;
         text-align: center;
       }
     }

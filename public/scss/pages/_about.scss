@@ -1,12 +1,11 @@
-$about-height: $spacing * 25;
+$background-height: $spacing * 25;
 $person-image-spacing: $spacing * 8;
 .about {
-  height: $about-height;
   .background {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: $background-height;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -45,8 +44,8 @@ $person-image-spacing: $spacing * 8;
         margin: 0 auto;
         overflow: hidden;
         @include screen-xs {
-          height: $person-image-spacing * 0.7;
-          width: $person-image-spacing * 0.7;
+          height: $person-image-spacing * 0.8;
+          width: $person-image-spacing * 0.8;
         }
         @include screen-sm-min {
           height: $person-image-spacing;

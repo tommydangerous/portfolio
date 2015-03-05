@@ -13,12 +13,19 @@ body {
     min-height: 100%;
     overflow-x: hidden;
     position: relative;
-    h1 {
-      margin: 0;
+    .content {
+      padding-bottom: $font-size-small-2 + ($spacing * 2);
     }
-    p {
-      margin: 0;
-    }
+  }
+  a {
+    color: $blue;
+    text-decoration: none;
+  }
+  h1 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
   }
   .clear {
     clear: both;

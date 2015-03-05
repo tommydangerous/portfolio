@@ -15,7 +15,7 @@ html, body {
 
 body {
   background-color: white;
-  color: #646464;
+  color: #282828;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   overflow-x: hidden; }
@@ -23,10 +23,15 @@ body {
     min-height: 100%;
     overflow-x: hidden;
     position: relative; }
-    body .wrapper h1 {
-      margin: 0; }
-    body .wrapper p {
-      margin: 0; }
+    body .wrapper .content {
+      padding-bottom: 53px; }
+  body a {
+    color: #779ecb;
+    text-decoration: none; }
+  body h1 {
+    margin: 0; }
+  body p {
+    margin: 0; }
   body .clear {
     clear: both;
     font-size: 1px;
@@ -55,9 +60,31 @@ header {
       header .header .logo img {
         height: 100%;
         width: 100%; }
+    header .header nav {
+      float: right; }
+      header .header nav a {
+        color: white;
+        display: inline-block;
+        font-size: 15px;
+        opacity: 0.8;
+        padding-bottom: 10px;
+        padding-top: 10px; }
+        @media screen and (min-width: 0px) and (max-width: 320px) {
+          header .header nav a {
+            padding-left: 10px;
+            padding-right: 10px; } }
+        @media screen and (min-width: 320px) {
+          header .header nav a {
+            padding-left: 20px;
+            padding-right: 20px; } }
+        header .header nav a:hover {
+          opacity: 1; }
+
+#footer-mount {
+  margin-top: -53px; }
 
 footer {
-  background-color: #646464;
+  background-color: #282828;
   color: white;
   overflow: hidden;
   position: relative;
@@ -65,83 +92,83 @@ footer {
   footer .footer {
     width: 100%; }
     footer .footer .copyright p {
-      font-size: 15px;
+      font-size: 13px;
+      line-height: 13px;
+      padding: 20px 0;
       text-align: center; }
 
-.about {
-  height: 500px; }
-  .about .background {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.about .background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
+  .about .background .gradient {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+    background: linear, false, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6);
     height: 100%;
-    overflow: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2; }
+  .about .background .hello {
+    height: 61px;
+    margin-top: -78.5px;
     position: relative;
-    z-index: 1; }
-    .about .background .gradient {
-      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
-      background: -moz-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
-      background: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
-      background: linear, false, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6);
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: 2; }
-    .about .background .hello {
-      height: 61px;
-      margin-top: -78.5px;
-      position: relative;
-      top: 50%;
-      z-index: 3; }
-      .about .background .hello h1 {
-        color: white;
-        font-size: 49px;
-        font-weight: 300;
-        line-height: 61px;
-        text-align: center; }
-  .about .person {
-    background-color: #fafafa; }
-    .about .person .person-body {
-      bottom: 80px;
-      position: relative;
-      z-index: 2; }
-      .about .person .person-body .image {
-        border-radius: 80px;
-        margin: 0 auto;
-        overflow: hidden; }
-        @media screen and (min-width: 0px) and (max-width: 320px) {
-          .about .person .person-body .image {
-            height: 112px;
-            width: 112px; } }
-        @media screen and (min-width: 320px) {
-          .about .person .person-body .image {
-            height: 160px;
-            width: 160px; } }
-        .about .person .person-body .image img {
-          height: 100%;
-          width: 100%; }
-      .about .person .person-body .name {
-        text-align: center; }
-        .about .person .person-body .name h1 {
-          font-size: 27px;
-          font-weight: 400;
-          margin-top: 10px; }
-        .about .person .person-body .name p {
-          color: #77be77;
-          font-size: 18px;
-          margin-top: 5px; }
-      .about .person .person-body .about-text {
-        margin: 0 auto;
-        margin-top: 20px;
-        max-width: 400px;
+    top: 50%;
+    z-index: 3; }
+    .about .background .hello h1 {
+      color: white;
+      font-size: 49px;
+      font-weight: 300;
+      line-height: 61px;
+      text-align: center; }
+.about .person {
+  background-color: #fafafa; }
+  .about .person .person-body {
+    bottom: 80px;
+    position: relative;
+    z-index: 2; }
+    .about .person .person-body .image {
+      border-radius: 80px;
+      margin: 0 auto;
+      overflow: hidden; }
+      @media screen and (min-width: 0px) and (max-width: 320px) {
+        .about .person .person-body .image {
+          height: 128px;
+          width: 128px; } }
+      @media screen and (min-width: 320px) {
+        .about .person .person-body .image {
+          height: 160px;
+          width: 160px; } }
+      .about .person .person-body .image img {
+        height: 100%;
         width: 100%; }
-        .about .person .person-body .about-text p {
-          color: #6e6e6e;
-          font-size: 15px;
-          line-height: 22.5px;
-          padding: 0 10px;
-          text-align: center; }
+    .about .person .person-body .name {
+      text-align: center; }
+      .about .person .person-body .name h1 {
+        font-size: 27px;
+        font-weight: 400;
+        margin-top: 10px; }
+      .about .person .person-body .name p {
+        color: #77be77;
+        font-size: 18px;
+        margin-top: 5px; }
+    .about .person .person-body .about-text {
+      margin: 0 auto;
+      margin-top: 20px;
+      max-width: 400px;
+      width: 100%; }
+      .about .person .person-body .about-text p {
+        color: #6e6e6e;
+        font-size: 15px;
+        line-height: 22.5px;
+        padding: 0 10px;
+        text-align: center; }
 
 /*# sourceMappingURL=application.css.map */

@@ -13,6 +13,11 @@ var Header = React.createClass({
               />
             </a>
           </div>
+          <nav>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+          </nav>
         </div>
         <div className="clear"></div>
       </header>

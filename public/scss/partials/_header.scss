@@ -21,5 +21,27 @@ header {
         width: 100%;
       }
     }
+    nav {
+      float: right;
+      a {
+        color: $white;
+        display: inline-block;
+        font-size: $font-size-normal-1;
+        opacity: 0.8;
+        padding-bottom: $spacing * 0.5;
+        padding-top: $spacing * 0.5;
+        @include screen-xs {
+          padding-left: $spacing * 0.5;
+          padding-right: $spacing * 0.5;
+        }
+        @include screen-sm-min {
+          padding-left: $spacing;
+          padding-right: $spacing;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
