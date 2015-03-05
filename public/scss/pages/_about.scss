@@ -1,0 +1,87 @@
+$about-height: $spacing * 25;
+$person-image-spacing: $spacing * 8;
+.about {
+  height: $about-height;
+  .background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    .gradient {
+      @include gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+    .hello {
+      height: $font-size-larger-2;
+      margin-top: (-0.5 * $font-size-larger-2) - ($person-image-spacing * 0.3);
+      position: relative;
+      top: 50%;
+      z-index: 3;
+      h1 {
+        color: $white;
+        font-size: $font-size-larger-1;
+        font-weight: $font-weight-normal;
+        line-height: $font-size-larger-2;
+        text-align: center;
+      }
+    }
+  }
+  .person {
+    background-color: rgb(250, 250, 250);
+    .person-body {
+      bottom: $person-image-spacing * 0.5;
+      position: relative;
+      z-index: 2;
+      .image {
+        border-radius: $person-image-spacing * 0.5;
+        margin: 0 auto;
+        overflow: hidden;
+        @include screen-xs {
+          height: $person-image-spacing * 0.7;
+          width: $person-image-spacing * 0.7;
+        }
+        @include screen-sm-min {
+          height: $person-image-spacing;
+          width: $person-image-spacing;
+        }
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .name {
+        text-align: center;
+        h1 {
+          font-size: $font-size-medium-2;
+          font-weight: $font-weight-medium;
+          margin-top: $spacing * 0.5;
+        }
+        p {
+          color: $green;
+          font-size: $font-size-normal-2;
+          margin-top: $spacing * 0.25;
+        }
+      }
+      .about-text {
+        margin: 0 auto;
+        margin-top: $spacing;
+        max-width: $spacing * 20;
+        width: 100%;
+        p {
+          color: $gray-dark;
+          font-size: $font-size-normal-1;
+          line-height: $font-size-normal-1 * 1.5;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

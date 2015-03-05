@@ -6,7 +6,12 @@ var Header = React.createClass({
       <header>
         <div className="header">
           <div className="logo">
-            <img className="lazy" data-src="img/logo.png" src="img/empty.png"/>
+            <a href="/">
+              <img className="lazy"
+                   data-src="img/logo.png"
+                   src="img/empty.png"
+              />
+            </a>
           </div>
         </div>
         <div className="clear"></div>

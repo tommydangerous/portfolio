@@ -1,0 +1,16 @@
+footer {
+  background-color: $gray-darkest;
+  color: $white;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  .footer {
+    width: 100%;
+    .copyright {
+      p {
+        font-size: $font-size-normal-1;
+        text-align: center;
+      }
+    }
+  }
+}

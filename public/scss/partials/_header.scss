@@ -1,0 +1,25 @@
+$header-height: $spacing * 2;
+header {
+  margin-bottom: -1 * $header-height;
+  position: relative;
+  z-index: 2;
+  .header {
+    height: $header-height;
+    width: 100%;
+    .logo {
+      height: $header-height;
+      float: left;
+      width: $header-height;
+      @include screen-xs {
+        padding: $spacing * 0.5;
+      }
+      @include screen-sm-min {
+        padding: $spacing * 0.4;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
