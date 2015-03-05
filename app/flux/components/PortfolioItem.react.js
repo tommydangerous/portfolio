@@ -4,8 +4,10 @@ var PortfolioItem = React.createClass({
   render: function() {
     return (
       <a className="portfolio-item"
+         data-clicked={this.props.item.count}
          href={this.props.item.href}
          id={this.props.item.id}
+         onClick={this._click}
          target="_blank">
         <div className="image">
           <img className="lazy"
@@ -23,6 +25,12 @@ var PortfolioItem = React.createClass({
         </div>
       </a>
     );
+  },
+
+  _click: function() {
+    this.props.onClick(this.props.item.id, {
+      count: this.props.item.count + 1
+    });
   }
 });
 
