@@ -15,7 +15,7 @@ html, body {
 
 body {
   background-color: white;
-  color: #3c3c3c;
+  color: #646464;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   overflow-x: hidden; }
@@ -57,7 +57,7 @@ header {
         width: 100%; }
 
 footer {
-  background-color: #3c3c3c;
+  background-color: #646464;
   color: white;
   overflow: hidden;
   position: relative;
@@ -138,9 +138,10 @@ footer {
         max-width: 400px;
         width: 100%; }
         .about .person .person-body .about-text p {
-          color: #646464;
+          color: #6e6e6e;
           font-size: 15px;
           line-height: 22.5px;
+          padding: 0 10px;
           text-align: center; }
 
 /*# sourceMappingURL=application.css.map */

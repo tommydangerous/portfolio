@@ -76,9 +76,10 @@ $person-image-spacing: $spacing * 8;
         max-width: $spacing * 20;
         width: 100%;
         p {
-          color: $gray-dark;
+          color: $gray-medium-1;
           font-size: $font-size-normal-1;
           line-height: $font-size-normal-1 * 1.5;
+          padding: 0 ($spacing * 0.5);
           text-align: center;
         }
       }
