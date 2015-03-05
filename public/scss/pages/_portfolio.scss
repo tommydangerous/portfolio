@@ -1,0 +1,93 @@
+$image-padding: $spacing * 1.5;
+$image-size: $spacing * 8;
+.portfolio {
+  padding: $image-size 0;
+  .items {
+    margin: 0 auto;
+    max-width: $width;
+    width: 100%;
+    .portfolio-item {
+      display: block;
+      @include screen-sm-min {
+        margin-bottom: $image-size * 0.5;
+        @include span-columns(12);
+      }
+      @include screen-md-min {
+        margin-bottom: $image-size;
+        @include span-columns(4);
+        @include omega(3n);
+      }
+      .image {
+        border-radius: $image-size * 0.5;
+        height: $image-size;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: $image-padding;
+        width: $image-size;
+        img {
+          height: $image-size - ($image-padding * 2);
+          width: $image-size - ($image-padding * 2);
+        }
+      }
+      &#onmyblock {
+        .image {
+          background-color: rgb(41, 184, 229);
+        }
+      }
+      &#dunzo {
+        .image {
+          background-color: rgb(0, 0, 0);
+        }
+      }
+      &#spadetree {
+        .image {
+          background-color: rgb(0, 0, 0);
+        }
+      }
+      &#bite {
+        .image {
+          background-color: rgb(207, 4, 4);
+        }
+      }
+      &#skimreads {
+        .image {
+          background-color: rgb(40, 40, 40);
+        }
+      }
+      &#flashingdeals {
+        .image {
+          background-color: rgb(214, 249, 255);
+        }
+      }
+      .name {
+        text-align: center;
+        h1 {
+          color: $gray-dark-1;
+          font-size: $font-size-medium-2;
+          font-weight: $font-weight-medium;
+          margin-top: $spacing * 0.5;
+        }
+        p {
+          color: $green;
+          font-size: $font-size-normal-2;
+          margin-top: $spacing * 0.25;
+        }
+      }
+      .description {
+        padding: 0 $spacing;
+        .border {
+          background-color: $gray-light-3;
+          height: 1px;
+          margin: $spacing auto;
+          width: 60%;
+        }
+        p {
+          color: $gray-medium-1;
+          font-size: $font-size-normal-1;
+          line-height: $font-size-normal-1 * 1.5;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
