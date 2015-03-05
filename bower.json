@@ -2,8 +2,7 @@
   "name": "portfolio",
   "version": "0.0.0",
   "dependencies": {
-    "bootstrap": "latest",
-    "jquery": "latest",
-    "react": "latest"
+    "bourbon": "latest",
+    "neat": "latest"
   }
 }

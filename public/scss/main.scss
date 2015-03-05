@@ -1,19 +1,86 @@
-body {
-  background-color: hsl(0, 0, 98);
-  .wrapper {
+@import "bourbon/bourbon";
+@import "neat/neat";
 
+$spacing: 20px;
+$width: 320px * 3;
+
+$header-height: $spacing * 2;
+
+// Fonts
+$font-size-normal: 14px;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(255, 255, 0);
+  color: rgb(80, 80, 80);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  .wrapper {
+    min-height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    .content {
+      margin: 0 auto;
+      width: $width;
+    }
+    #columns {
+      @include outer-container;
+      div {
+        @include span-columns(6);
+      }
+    }
+  }
+  .clear {
+    clear: both;
+    font-size: 1px;
+    height: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
   }
 }
 
 // Header
 header {
-  background-color: hsl(90, 100, 98);
   .header {
-    height: 50px;
+    background-color: red;
+    // height: $header-height;
+    margin: 0 auto;
+    max-width: $width;
+    width: 100%;
+    .logo {
+      height: $header-height;
+      float: left;
+      padding: $spacing * 0.25;
+      width: $header-height;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
   }
 }
 
 // Footer
 footer {
-
+  background-color: red;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  .footer {
+    margin: 0 auto;
+    width: $width;
+    .copyright {
+      p {
+        font-size: $font-size-normal;
+        text-align: center;
+      }
+    }
+  }
 }

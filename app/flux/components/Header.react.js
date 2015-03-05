@@ -5,8 +5,11 @@ var Header = React.createClass({
     return (
       <header>
         <div className="header">
-          <a href="/">DANGEROUS</a>
+          <div className="logo">
+            <img className="lazy" data-src="img/logo.png" src="img/empty.png"/>
+          </div>
         </div>
+        <div className="clear"></div>
       </header>
     );
   }

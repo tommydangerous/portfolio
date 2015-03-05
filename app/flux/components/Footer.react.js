@@ -4,7 +4,11 @@ var Footer = React.createClass({
   render: function() {
     return (
       <footer>
-        <p>Copyright 2015</p>
+        <div className="footer">
+          <div className="copyright">
+            <p>Copyright 2015</p>
+          </div>
+        </div>
       </footer>
     );
   }
