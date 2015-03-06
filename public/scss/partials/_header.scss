@@ -9,13 +9,8 @@ header {
     .logo {
       height: $header-height;
       float: left;
+      padding: $spacing * 0.4;
       width: $header-height;
-      @include screen-xs {
-        padding: $spacing * 0.5;
-      }
-      @include screen-sm-min {
-        padding: $spacing * 0.4;
-      }
       img {
         height: 100%;
         width: 100%;
@@ -28,16 +23,7 @@ header {
         display: inline-block;
         font-size: $font-size-normal-1;
         opacity: 0.8;
-        padding-bottom: $spacing * 0.5;
-        padding-top: $spacing * 0.5;
-        @include screen-xs {
-          padding-left: $spacing * 0.5;
-          padding-right: $spacing * 0.5;
-        }
-        @include screen-sm-min {
-          padding-left: $spacing;
-          padding-right: $spacing;
-        }
+        padding: ($spacing * 0.5) $spacing;
         &:hover {
           opacity: 1;
         }

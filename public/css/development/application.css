@@ -50,13 +50,8 @@ header {
     header .header .logo {
       height: 40px;
       float: left;
+      padding: 8px;
       width: 40px; }
-      @media screen and (min-width: 0px) and (max-width: 360px) {
-        header .header .logo {
-          padding: 10px; } }
-      @media screen and (min-width: 360px) {
-        header .header .logo {
-          padding: 8px; } }
       header .header .logo img {
         height: 100%;
         width: 100%; }
@@ -67,16 +62,7 @@ header {
         display: inline-block;
         font-size: 15px;
         opacity: 0.8;
-        padding-bottom: 10px;
-        padding-top: 10px; }
-        @media screen and (min-width: 0px) and (max-width: 360px) {
-          header .header nav a {
-            padding-left: 10px;
-            padding-right: 10px; } }
-        @media screen and (min-width: 360px) {
-          header .header nav a {
-            padding-left: 20px;
-            padding-right: 20px; } }
+        padding: 10px 20px; }
         header .header nav a:hover {
           opacity: 1; }
 
@@ -136,16 +122,10 @@ footer {
     z-index: 2; }
     .about .person .person-body .image {
       border-radius: 80px;
+      height: 160px;
       margin: 0 auto;
-      overflow: hidden; }
-      @media screen and (min-width: 0px) and (max-width: 360px) {
-        .about .person .person-body .image {
-          height: 128px;
-          width: 128px; } }
-      @media screen and (min-width: 360px) {
-        .about .person .person-body .image {
-          height: 160px;
-          width: 160px; } }
+      overflow: hidden;
+      width: 160px; }
       .about .person .person-body .image img {
         height: 100%;
         width: 100%; }

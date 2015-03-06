@@ -41,16 +41,10 @@ $person-image-spacing: $spacing * 8;
       z-index: 2;
       .image {
         border-radius: $person-image-spacing * 0.5;
+        height: $person-image-spacing;
         margin: 0 auto;
         overflow: hidden;
-        @include screen-xs {
-          height: $person-image-spacing * 0.8;
-          width: $person-image-spacing * 0.8;
-        }
-        @include screen-sm-min {
-          height: $person-image-spacing;
-          width: $person-image-spacing;
-        }
+        width: $person-image-spacing;
         img {
           height: 100%;
           width: 100%;
