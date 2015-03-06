@@ -16,7 +16,8 @@ app.use(express.static(__dirname + '/public'));
 // require('./app/express/routers/router')(app);
 
 app.get('/', function(req, res) {
-  res.json({ hey: 'yo' });
+  // res.json({ hey: 'yo' });
+  res.render('pages/test');
 });
 
 app.listen(port, function() {
