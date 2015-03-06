@@ -13,7 +13,11 @@ app.engine('html', hbs.__express);
 
 app.use(express.static(__dirname + '/public'));
 
-require('./app/express/routers/router')(app);
+// require('./app/express/routers/router')(app);
+
+app.get('/', function(req, res) {
+  res.json({ hey: 'yo' });
+});
 
 app.listen(port, function() {
   console.log('Server listening on port ' + port + ' ' + process.env.NODE_ENV);
