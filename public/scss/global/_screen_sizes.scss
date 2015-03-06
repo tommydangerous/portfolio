@@ -1,4 +1,6 @@
+$slack: 40px;
+
 $min-width-extra-small: 0px;
-$min-width-small: 320px;
-$min-width-medium: 640px;
-$min-width-large: 960px;
+$min-width-small: 320px + $slack;
+$min-width-medium: 640px + $slack;
+$min-width-large: 960px + $slack;

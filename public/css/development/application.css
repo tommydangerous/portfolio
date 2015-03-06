@@ -51,10 +51,10 @@ header {
       height: 40px;
       float: left;
       width: 40px; }
-      @media screen and (min-width: 0px) and (max-width: 320px) {
+      @media screen and (min-width: 0px) and (max-width: 360px) {
         header .header .logo {
           padding: 10px; } }
-      @media screen and (min-width: 320px) {
+      @media screen and (min-width: 360px) {
         header .header .logo {
           padding: 8px; } }
       header .header .logo img {
@@ -69,11 +69,11 @@ header {
         opacity: 0.8;
         padding-bottom: 10px;
         padding-top: 10px; }
-        @media screen and (min-width: 0px) and (max-width: 320px) {
+        @media screen and (min-width: 0px) and (max-width: 360px) {
           header .header nav a {
             padding-left: 10px;
             padding-right: 10px; } }
-        @media screen and (min-width: 320px) {
+        @media screen and (min-width: 360px) {
           header .header nav a {
             padding-left: 20px;
             padding-right: 20px; } }
@@ -138,11 +138,11 @@ footer {
       border-radius: 80px;
       margin: 0 auto;
       overflow: hidden; }
-      @media screen and (min-width: 0px) and (max-width: 320px) {
+      @media screen and (min-width: 0px) and (max-width: 360px) {
         .about .person .person-body .image {
           height: 128px;
           width: 128px; } }
-      @media screen and (min-width: 320px) {
+      @media screen and (min-width: 360px) {
         .about .person .person-body .image {
           height: 160px;
           width: 160px; } }
@@ -173,14 +173,15 @@ footer {
 
 section.contact {
   background-color: #282828; }
-  @media screen and (min-width: 0px) and (max-width: 320px) {
+  @media screen and (min-width: 0px) and (max-width: 360px) {
     section.contact {
       padding-top: 40px; } }
-  @media screen and (min-width: 320px) and (max-width: 640px) {
+  @media screen and (min-width: 360px) and (max-width: 680px) {
     section.contact {
       padding-top: 40px; } }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 680px) {
     section.contact {
+      padding-bottom: 80px;
       padding-top: 80px; } }
   section.contact .items {
     margin: 0 auto;
@@ -189,11 +190,20 @@ section.contact {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto; }
+    @media screen and (min-width: 0px) and (max-width: 360px) {
+      section.contact .items {
+        margin-top: 40px; } }
+    @media screen and (min-width: 360px) and (max-width: 680px) {
+      section.contact .items {
+        margin-top: 40px; } }
+    @media screen and (min-width: 680px) {
+      section.contact .items {
+        margin-top: 80px; } }
     section.contact .items:after {
       content: "";
       display: table;
       clear: both; }
-    @media screen and (min-width: 0px) and (max-width: 320px) {
+    @media screen and (min-width: 0px) and (max-width: 360px) {
       section.contact .items .contact-item {
         margin-bottom: 40px;
         float: left;
@@ -206,7 +216,7 @@ section.contact {
           margin-right: 0; }
         section.contact .items .contact-item:nth-child(2n+1) {
           clear: left; } }
-    @media screen and (min-width: 320px) and (max-width: 640px) {
+    @media screen and (min-width: 360px) and (max-width: 680px) {
       section.contact .items .contact-item {
         margin-bottom: 40px;
         float: left;
@@ -219,9 +229,8 @@ section.contact {
           margin-right: 0; }
         section.contact .items .contact-item:nth-child(2n+1) {
           clear: left; } }
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: 680px) {
       section.contact .items .contact-item {
-        padding-bottom: 80px;
         float: left;
         display: block;
         margin-right: 2.35765%;
@@ -240,13 +249,91 @@ section.contact {
       section.contact .items .contact-item a img {
         height: 100%;
         width: 100%; }
+  section.contact .contact-form {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px; }
+    section.contact .contact-form:after {
+      content: "";
+      display: table;
+      clear: both; }
+    section.contact .contact-form input, section.contact .contact-form a {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      border: none;
+      border-radius: 2px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 27px;
+      padding: 15px;
+      width: 100%; }
+    section.contact .contact-form .input input {
+      color: #282828;
+      font-weight: 300; }
+      section.contact .contact-form .input input:active, section.contact .contact-form .input input:focus {
+        outline: none; }
+    section.contact .contact-form .button a {
+      background-color: #77be77;
+      color: white;
+      display: block;
+      font-weight: 400;
+      text-align: center; }
+      section.contact .contact-form .button a:hover {
+        background-color: #6db46d;
+        cursor: pointer; }
+    @media screen and (min-width: 0px) and (max-width: 360px) {
+      section.contact .contact-form .input, section.contact .contact-form .button {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        section.contact .contact-form .input:last-child, section.contact .contact-form .button:last-child {
+          margin-right: 0; }
+      section.contact .contact-form .input {
+        margin-bottom: 10px; }
+        section.contact .contact-form .input input {
+          text-align: center; } }
+    @media screen and (min-width: 360px) and (max-width: 680px) {
+      section.contact .contact-form .input {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        section.contact .contact-form .input:last-child {
+          margin-right: 0; }
+      section.contact .contact-form .button {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        section.contact .contact-form .button:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 680px) {
+      section.contact .contact-form .input {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 74.41059%; }
+        section.contact .contact-form .input:last-child {
+          margin-right: 0; }
+      section.contact .contact-form .button {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%; }
+        section.contact .contact-form .button:last-child {
+          margin-right: 0; } }
 
 .portfolio {
   padding-top: 160px; }
-  @media screen and (min-width: 0px) and (max-width: 320px) {
+  @media screen and (min-width: 0px) and (max-width: 360px) {
     .portfolio {
       padding-bottom: 80px; } }
-  @media screen and (min-width: 320px) and (max-width: 640px) {
+  @media screen and (min-width: 360px) and (max-width: 680px) {
     .portfolio {
       padding-bottom: 80px; } }
   .portfolio .items {
@@ -262,7 +349,7 @@ section.contact {
       clear: both; }
     .portfolio .items .portfolio-item {
       display: block; }
-      @media screen and (min-width: 0px) and (max-width: 320px) {
+      @media screen and (min-width: 0px) and (max-width: 360px) {
         .portfolio .items .portfolio-item {
           margin-bottom: 80px;
           float: left;
@@ -271,7 +358,7 @@ section.contact {
           width: 100%; }
           .portfolio .items .portfolio-item:last-child {
             margin-right: 0; } }
-      @media screen and (min-width: 320px) and (max-width: 640px) {
+      @media screen and (min-width: 360px) and (max-width: 680px) {
         .portfolio .items .portfolio-item {
           margin-bottom: 80px;
           float: left;
@@ -280,7 +367,7 @@ section.contact {
           width: 100%; }
           .portfolio .items .portfolio-item:last-child {
             margin-right: 0; } }
-      @media screen and (min-width: 640px) {
+      @media screen and (min-width: 680px) {
         .portfolio .items .portfolio-item {
           margin-bottom: 160px;
           float: left;

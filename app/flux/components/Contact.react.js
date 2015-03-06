@@ -1,7 +1,7 @@
 var React = require('react');
 
-var ContactItem = require('./ContactItem.react');
-
+var ContactForm  = require('./ContactForm.react');
+var ContactItem  = require('./ContactItem.react');
 var ContactStore = require('../stores/ContactStore');
 
 var Contact = React.createClass({
@@ -22,6 +22,7 @@ var Contact = React.createClass({
 
     return (
       <section className="contact">
+        <ContactForm placeholder="Your email address" />
         <div className="items">
           {elements}
         </div>
