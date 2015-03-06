@@ -1,6 +1,6 @@
 $image-size: $spacing * 2;
 section.contact {
-  background-color: $gray-dark-2;
+  background-color: $gray-dark-1;
   @include screen-xs {
     padding-top: $image-size;
   }
@@ -28,8 +28,8 @@ section.contact {
       }
       @include screen-md-min {
         padding-bottom: $image-size * 2;
-        @include span-columns(3);
-        @include omega(4n);
+        @include span-columns(2);
+        @include omega(6n);
       }
       a {
         display: block;

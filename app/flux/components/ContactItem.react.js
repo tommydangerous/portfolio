@@ -4,7 +4,9 @@ var ContactItem = React.createClass({
   render: function() {
     return (
       <div className="contact-item">
-        <a href={this.props.item.href} target="_blank">
+        <a href={this.props.item.href}
+           target="_blank"
+           title={this.props.item.name}>
           <img className="lazy"
                data-src={this.props.item.imageUrl}
                src="img/empty.png"

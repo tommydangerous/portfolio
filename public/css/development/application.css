@@ -172,7 +172,7 @@ footer {
         text-align: center; }
 
 section.contact {
-  background-color: #3c3c3c; }
+  background-color: #282828; }
   @media screen and (min-width: 0px) and (max-width: 320px) {
     section.contact {
       padding-top: 40px; } }
@@ -225,12 +225,12 @@ section.contact {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 23.23176%; }
+        width: 14.70196%; }
         section.contact .items .contact-item:last-child {
           margin-right: 0; }
-        section.contact .items .contact-item:nth-child(4n) {
+        section.contact .items .contact-item:nth-child(6n) {
           margin-right: 0; }
-        section.contact .items .contact-item:nth-child(4n+1) {
+        section.contact .items .contact-item:nth-child(6n+1) {
           clear: left; } }
     section.contact .items .contact-item a {
       display: block;
