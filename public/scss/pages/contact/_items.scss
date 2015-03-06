@@ -1,0 +1,57 @@
+$image-size: $spacing * 2;
+section.contact {
+  background-color: $gray-dark-1;
+  @include screen-xs {
+    padding-top: $image-size;
+  }
+  @include screen-sm {
+    padding-top: $image-size;
+  }
+  @include screen-md-min {
+    padding-top: $image-size * 2;
+  }
+  .items {
+    margin: 0 auto;
+    max-width: $width;
+    width: 100%;
+    @include screen-xs {
+      padding-bottom: $image-size;
+      padding-top: $image-size * 2;
+    }
+    @include screen-sm {
+      padding-bottom: $image-size;
+      padding-top: $image-size * 2;
+    }
+    @include screen-md-min {
+      padding-bottom: $image-size * 3;
+      padding-top: $image-size * 3;
+    }
+    @include outer-container;
+    .contact-item {
+      @include screen-xs {
+        margin-bottom: $image-size;
+        @include span-columns(6);
+        @include omega(2n);
+      }
+      @include screen-sm {
+        margin-bottom: $image-size;
+        @include span-columns(6);
+        @include omega(2n);
+      }
+      @include screen-md-min {
+        @include span-columns(2);
+        @include omega(6n);
+      }
+      a {
+        display: block;
+        height: $image-size;
+        margin: 0 auto;
+        width: $image-size;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

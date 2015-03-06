@@ -171,6 +171,85 @@ footer {
         padding: 0 10px;
         text-align: center; }
 
+section.contact .contact-form {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px; }
+  section.contact .contact-form:after {
+    content: "";
+    display: table;
+    clear: both; }
+  section.contact .contact-form input, section.contact .contact-form a {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 2px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px;
+    width: 100%; }
+  section.contact .contact-form .input input {
+    color: #282828;
+    font-weight: 300; }
+    section.contact .contact-form .input input:active, section.contact .contact-form .input input:focus {
+      outline: none; }
+  section.contact .contact-form .button a {
+    background-color: #77be77;
+    color: white;
+    display: block;
+    font-weight: 400;
+    text-align: center; }
+    section.contact .contact-form .button a:hover {
+      background-color: #6db46d;
+      cursor: pointer; }
+  @media screen and (min-width: 0px) and (max-width: 360px) {
+    section.contact .contact-form .input, section.contact .contact-form .button {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      section.contact .contact-form .input:last-child, section.contact .contact-form .button:last-child {
+        margin-right: 0; }
+    section.contact .contact-form .input {
+      margin-bottom: 10px; }
+      section.contact .contact-form .input input {
+        text-align: center; } }
+  @media screen and (min-width: 360px) and (max-width: 680px) {
+    section.contact .contact-form .input {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      section.contact .contact-form .input:last-child {
+        margin-right: 0; }
+    section.contact .contact-form .button {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      section.contact .contact-form .button:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 680px) {
+    section.contact .contact-form .input {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%; }
+      section.contact .contact-form .input:last-child {
+        margin-right: 0; }
+    section.contact .contact-form .button {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      section.contact .contact-form .button:last-child {
+        margin-right: 0; } }
+
 section.contact {
   background-color: #282828; }
   @media screen and (min-width: 0px) and (max-width: 360px) {
@@ -181,7 +260,6 @@ section.contact {
       padding-top: 40px; } }
   @media screen and (min-width: 680px) {
     section.contact {
-      padding-bottom: 80px;
       padding-top: 80px; } }
   section.contact .items {
     margin: 0 auto;
@@ -192,13 +270,16 @@ section.contact {
     margin-right: auto; }
     @media screen and (min-width: 0px) and (max-width: 360px) {
       section.contact .items {
-        margin-top: 40px; } }
+        padding-bottom: 40px;
+        padding-top: 80px; } }
     @media screen and (min-width: 360px) and (max-width: 680px) {
       section.contact .items {
-        margin-top: 40px; } }
+        padding-bottom: 40px;
+        padding-top: 80px; } }
     @media screen and (min-width: 680px) {
       section.contact .items {
-        margin-top: 80px; } }
+        padding-bottom: 120px;
+        padding-top: 120px; } }
     section.contact .items:after {
       content: "";
       display: table;
@@ -249,84 +330,6 @@ section.contact {
       section.contact .items .contact-item a img {
         height: 100%;
         width: 100%; }
-  section.contact .contact-form {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px; }
-    section.contact .contact-form:after {
-      content: "";
-      display: table;
-      clear: both; }
-    section.contact .contact-form input, section.contact .contact-form a {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      -ms-appearance: none;
-      -o-appearance: none;
-      appearance: none;
-      border: none;
-      border-radius: 2px;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 18px;
-      line-height: 27px;
-      padding: 15px;
-      width: 100%; }
-    section.contact .contact-form .input input {
-      color: #282828;
-      font-weight: 300; }
-      section.contact .contact-form .input input:active, section.contact .contact-form .input input:focus {
-        outline: none; }
-    section.contact .contact-form .button a {
-      background-color: #77be77;
-      color: white;
-      display: block;
-      font-weight: 400;
-      text-align: center; }
-      section.contact .contact-form .button a:hover {
-        background-color: #6db46d;
-        cursor: pointer; }
-    @media screen and (min-width: 0px) and (max-width: 360px) {
-      section.contact .contact-form .input, section.contact .contact-form .button {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        section.contact .contact-form .input:last-child, section.contact .contact-form .button:last-child {
-          margin-right: 0; }
-      section.contact .contact-form .input {
-        margin-bottom: 10px; }
-        section.contact .contact-form .input input {
-          text-align: center; } }
-    @media screen and (min-width: 360px) and (max-width: 680px) {
-      section.contact .contact-form .input {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 65.88078%; }
-        section.contact .contact-form .input:last-child {
-          margin-right: 0; }
-      section.contact .contact-form .button {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        section.contact .contact-form .button:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 680px) {
-      section.contact .contact-form .input {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 74.41059%; }
-        section.contact .contact-form .input:last-child {
-          margin-right: 0; }
-      section.contact .contact-form .button {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 23.23176%; }
-        section.contact .contact-form .button:last-child {
-          margin-right: 0; } }
 
 .portfolio {
   padding-top: 160px; }

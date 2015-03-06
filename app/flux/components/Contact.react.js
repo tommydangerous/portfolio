@@ -22,7 +22,9 @@ var Contact = React.createClass({
 
     return (
       <section className="contact">
-        <ContactForm placeholder="Your email address" />
+        <ContactForm button="Email"
+                     placeholder="Your message..."
+                     to="quantumventuress@gmail.com" />
         <div className="items">
           {elements}
         </div>

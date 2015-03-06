@@ -10,9 +10,12 @@ var ContactForm = React.createClass({
   },
 
   getInitialState: function() {
+    var to    = this.props.to || '';
+    var value = this.props.value || '';
     return {
-      mailto: this.props.mailto || 'mailto:',
-      value: this.props.value || ''
+      mailto: this._createMailto(to, value),
+      to:     to,
+      value:  value
     };
   },
 
@@ -26,16 +29,29 @@ var ContactForm = React.createClass({
                  type="text" />
         </div>
         <div className="button">
-          <a href={this.state.mailto}>Contact</a>
+          <a href={this.state.mailto} onClick={this._onClick}>
+            {this.props.button}
+          </a>
         </div>
       </div>
     );
   },
 
+  _createMailto: function(to, value) {
+    return 'mailto:' + to + '?body=' + value;
+  },
+
   _onChange: function(event) {
-    var value = event.target.value;
+    this._setState(event.target.value);
+  },
+
+  _onClick: function() {
+    setTimeout(this._setState(''), 100);
+  },
+
+  _setState: function(value) {
     this.setState({
-      mailto: 'mailto:' + value,
+      mailto: this._createMailto(this.props.to, value),
       value: value
     });
   }
