@@ -2,6 +2,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var express = require('express');
 var app     = express();
+var morgan  = require('morgan');
 
 var hbs = require('hbs');
 
@@ -13,11 +14,14 @@ app.engine('html', hbs.__express);
 
 app.use(express.static(__dirname + '/public'));
 
+app.use(morgan('combined'));
+
 // require('./app/express/routers/router')(app);
 
 app.get('/', function(req, res) {
   // res.json({ hey: 'yo' });
-  res.render('pages/test');
+  // res.render('pages/test');
+  res.send('hello world');
 });
 
 app.listen(port, function() {

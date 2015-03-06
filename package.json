@@ -10,6 +10,7 @@
     "jquery": "latest",
     "jquery-lazy": "latest",
     "keymirror": "latest",
+    "morgan": "latest",
     "mongoose": "latest",
     "object-assign": "latest",
     "react": "latest",
