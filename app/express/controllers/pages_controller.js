@@ -3,5 +3,7 @@ exports.index = function(req, res) {
   //   title: 'Dangerous',
   //   environment: process.env.NODE_ENV
   // });
-  res.render('pages/test');
+  res.render('pages/test', {
+    title: 'Test'
+  });
 };

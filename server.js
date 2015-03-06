@@ -10,6 +10,7 @@ var port = process.env.PORT || 8080;
 
 app.set('views', './app/express/views');
 app.set('view engine', 'html');
+app.set('view options', { layout: 'layout.html' });
 app.engine('html', hbs.__express);
 
 app.use(express.static(__dirname + '/public'));
