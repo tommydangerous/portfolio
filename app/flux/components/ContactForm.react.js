@@ -29,7 +29,7 @@ var ContactForm = React.createClass({
                  type="text" />
         </div>
         <div className="button">
-          <a href={this.state.mailto} onClick={this._onClick}>
+          <a href={this.state.mailto}>
             {this.props.button}
           </a>
         </div>
@@ -43,10 +43,6 @@ var ContactForm = React.createClass({
 
   _onChange: function(event) {
     this._setState(event.target.value);
-  },
-
-  _onClick: function() {
-    setTimeout(this._setState(''), 100);
   },
 
   _setState: function(value) {
