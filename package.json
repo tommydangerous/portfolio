@@ -1,7 +1,16 @@
 {
   "name": "portfolio",
+  "description": "Personal web app",
+  "engines": {
+    "node": "latest",
+    "npm": "latest"
+  },
   "main": "app/main.js",
-  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tommydangerous/portfolio.git"
+  },
+  "version": "1.0.0",
   "dependencies": {
     "body-parser": "latest",
     "express": "latest",
