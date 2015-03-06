@@ -17,7 +17,7 @@ var About = React.createClass({
         backgroundImage: 'url(img/background.jpg)'
       },
       emptyImage:  'img/empty.png',
-      personImage: 'img/person.png',
+      personImage: 'img/person.jpg',
       personName:  'Tommy Dang'
     }
   },
