@@ -42,7 +42,7 @@ _items["bite"] = {
   description: 'Know where your friends are eating and share with them ' +
     'your plans for breakfast, lunch, or dinner.',
   count:    0,
-  href:     'https://itunes.apple.com/us/app/bite-app/id661010278?mt=8',
+  href:     'http://abiteapp.com',
   id:       'bite',
   imageUrl: 'img/bite.png',
   name:     'Bite',
