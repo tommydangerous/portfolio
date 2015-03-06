@@ -4,6 +4,7 @@ exports.index = function(req, res) {
   //   environment: process.env.NODE_ENV
   // });
   res.render('pages/test', {
-    title: 'Test'
+    title: 'Test',
+    environment: process.env.NODE_ENV
   });
 };
