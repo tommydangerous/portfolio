@@ -1,11 +1,9 @@
-var gulp       = require('gulp');
-var sass       = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
+var gulp = require('gulp');
 
-gulp.task('default', function () {
-  gulp.src('./public/scss/*.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./public/css'));
+var uglify = require('gulp-uglify');
+
+gulp.task('compress', function() {
+  gulp.src('./public/js/development/bundle.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./public/js/production'))
 });

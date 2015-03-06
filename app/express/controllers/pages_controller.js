@@ -1,5 +1,6 @@
 exports.index = function(req, res) {
   res.render('pages/index', {
-    title: 'Dangerous'
+    title: 'Dangerous',
+    environment: process.env.NODE_ENV
   });
 };
