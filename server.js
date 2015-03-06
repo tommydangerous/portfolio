@@ -16,13 +16,13 @@ app.use(express.static(__dirname + '/public'));
 
 app.use(morgan('combined'));
 
-// require('./app/express/routers/router')(app);
+require('./app/express/routers/router')(app);
 
-app.get('/', function(req, res) {
-  // res.json({ hey: 'yo' });
-  // res.render('pages/test');
-  res.send('hello world');
-});
+// app.get('/', function(req, res) {
+//   // res.json({ hey: 'yo' });
+//   // res.render('pages/test');
+//   res.send('hello world');
+// });
 
 app.listen(port, function() {
   console.log('Server listening on port ' + port + ' ' + process.env.NODE_ENV);
