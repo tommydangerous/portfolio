@@ -1,9 +1,11 @@
 var React = require('react');
 
 var aboutText =
-  'I love solving problems by building mobile and web apps. ' +
+  'I love solving problems by building mobile and web applications. ' +
   'When I am not passionately coding, ' +
-  'I enjoy watching movies, working out, and investing.';
+  'I enjoy watching movies, working out, and investing. ' +
+  'My wife is the most important person in my life. ' +
+  'I care very deeply for my friends and family.';
 
 var About = React.createClass({
   getInitialState: function() {
