@@ -1,15 +1,14 @@
 var Data = {
   about: {
-    backgroundImage: 'img/background.jpg',
-    hello: 'hello, world',
-    image: 'img/person.jpg',
-    name: 'Tommy Dang',
-    subtitle: 'Entrepreneur / Designer / Developer',
-    text: 'I love solving problems by building mobile and web applications. ' +
-      'When I am not passionately coding, ' +
-      'I enjoy watching movies, working out, and investing. ' +
-      'My wife is the most important person in my life. ' +
-      'I care very deeply for my friends and family.'
+    backgroundImage: 'img/background-david.jpg',
+    hello: 'iron sharpens iron',
+    image: 'img/person-david.jpg',
+    name: 'David Chau',
+    subtitle: 'Entrepreneur / Leader / Mentor',
+    text: 'Experienced leader with insatiable thirst for learning emerging ' +
+      'markets and businesses. Brings an entrepreneurial spirit to all work, ' +
+      'by motivating interdepartmental teams with clear direction and ' +
+      'focused vision for excellence.'
   },
   contact: {
     items: []
@@ -21,7 +20,7 @@ var Data = {
     footer: {
       copyright: 'Quantum Ventures'
     },
-    title: 'Dangerous'
+    title: 'David'
   },
   portfolio: {
     items: []
@@ -31,32 +30,32 @@ var Data = {
 module.exports = Data;
 
 Data.contact.items['facebook'] = {
-  href:     'https://www.facebook.com/tommydangerouss',
+  href:     'https://www.facebook.com/davidchau',
   imageUrl: 'img/facebook.png',
   name:     'Facebook'
 }
 Data.contact.items['twitter'] = {
-  href:     'https://twitter.com/TommyDANGerouss',
+  href:     'https://twitter.com/davidchau23',
   imageUrl: 'img/twitter.png',
   name:     'Twitter'
 }
 Data.contact.items['linkedin'] = {
-  href:     'https://www.linkedin.com/profile/view?id=182483014',
+  href:     'https://www.linkedin.com/profile/view?id=55446258',
   imageUrl: 'img/linkedin.png',
   name:     'LinkedIn'
 }
 Data.contact.items['github'] = {
-  href:     'https://github.com/tommydangerous',
+  href:     'https://github.com/davidchau',
   imageUrl: 'img/github.png',
   name:     'GitHub'
 }
 Data.contact.items['angellist'] = {
-  href:     'https://angel.co/tommydangerous',
+  href:     'https://angel.co/davidchau',
   imageUrl: 'img/angellist.png',
   name:     'AngelList'
 }
 Data.contact.items['email'] = {
-  href:     'mailto:quantumventuress@gmail.com',
+  href:     'mailto:davidchau23@gmail.com',
   imageUrl: 'img/email.png',
   name:     'Email'
 }
