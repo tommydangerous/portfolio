@@ -1,6 +1,7 @@
-var React = require('react');
-
+var React          = require('react');
 var ReactPropTypes = React.PropTypes;
+
+var Data = require('../../Data');
 
 var ContactForm = React.createClass({
 
@@ -10,11 +11,9 @@ var ContactForm = React.createClass({
   },
 
   getInitialState: function() {
-    var to    = this.props.to || '';
     var value = this.props.value || '';
     return {
-      mailto: this._createMailto(to, value),
-      to:     to,
+      mailto: this._createMailto(value),
       value:  value
     };
   },
@@ -37,8 +36,8 @@ var ContactForm = React.createClass({
     );
   },
 
-  _createMailto: function(to, value) {
-    return 'mailto:' + to + '?body=' + value;
+  _createMailto: function(value) {
+    return Data.contact.items['email'].href + '?body=' + value;
   },
 
   _onChange: function(event) {
@@ -47,7 +46,7 @@ var ContactForm = React.createClass({
 
   _setState: function(value) {
     this.setState({
-      mailto: this._createMailto(this.props.to, value),
+      mailto: this._createMailto(value),
       value: value
     });
   }
