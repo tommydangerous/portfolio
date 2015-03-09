@@ -30,7 +30,7 @@ var PortfolioItem = React.createClass({
 
     return (
       <div className="portfolio-item" id={this.props.item.id}>
-        <div className="image">
+        <div className="image" style={this.props.item.style}>
           <img className="lazy"
                data-src={this.props.item.imageUrl}
                src="img/empty.png"

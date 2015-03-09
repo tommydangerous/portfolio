@@ -1,5 +1,7 @@
 var React = require('react');
 
+var Data = require('../../Data');
+
 var Footer = React.createClass({
   render: function() {
     var date = new Date();
@@ -9,7 +11,7 @@ var Footer = React.createClass({
       <footer>
         <div className="footer">
           <div className="copyright">
-            <p>Quantum Ventures &#169; {year}</p>
+            <p>{Data.layout.footer.copyright} &#169; {year}</p>
           </div>
         </div>
       </footer>

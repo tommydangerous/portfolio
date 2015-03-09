@@ -371,18 +371,6 @@ section.contact {
       .portfolio .items .portfolio-item .image img {
         height: 100px;
         width: 100px; }
-    .portfolio .items .portfolio-item#onmyblock .image {
-      background-color: #29b8e5; }
-    .portfolio .items .portfolio-item#dunzo .image {
-      background-color: black; }
-    .portfolio .items .portfolio-item#spadetree .image {
-      background-color: black; }
-    .portfolio .items .portfolio-item#bite .image {
-      background-color: #cf0404; }
-    .portfolio .items .portfolio-item#skimreads .image {
-      background-color: #282828; }
-    .portfolio .items .portfolio-item#flashingdeals .image {
-      background-color: #d6f9ff; }
     .portfolio .items .portfolio-item .name {
       text-align: center; }
       .portfolio .items .portfolio-item .name h1 {
