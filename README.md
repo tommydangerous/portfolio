@@ -2,6 +2,8 @@
 ```
 $ brew install node    # Install Node and NPM
 $ npm install -g bower # Install Bower
+$ npm install          # Install Node packages
+$ bower install        # Install Bower packages
 ```
 
 ## Development
