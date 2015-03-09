@@ -18,7 +18,7 @@ var Data = {
   },
   layout: {
     footer: {
-      copyright: 'Quantum Ventures'
+      copyright: 'Debit Ventures'
     },
     title: 'David'
   },
