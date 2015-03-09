@@ -1,21 +1,16 @@
 var React = require('react');
 
-var aboutText =
-  'I love solving problems by building mobile and web applications. ' +
-  'When I am not passionately coding, ' +
-  'I enjoy watching movies, working out, and investing. ' +
-  'My wife is the most important person in my life. ' +
-  'I care very deeply for my friends and family.';
+var Data = require('../../Data');
 
 var About = React.createClass({
   getInitialState: function() {
     return {
       backgroundImageStyle: {
-        backgroundImage: 'url(img/background.jpg)'
+        backgroundImage: 'url(' + Data.about.backgroundImage + ')'
       },
-      emptyImage:  'img/empty.png',
-      personImage: 'img/person.jpg',
-      personName:  'Tommy Dang'
+      emptyImage:  Data.images.empty,
+      personImage: Data.about.image,
+      personName:  Data.about.name
     }
   },
 
@@ -26,7 +21,7 @@ var About = React.createClass({
              style={this.state.backgroundImageStyle}>
           <div className="gradient"></div>
           <div className="hello">
-            <h1>hello, world</h1>
+            <h1>{Data.about.hello}</h1>
           </div>
         </div>
         <div className="person">
@@ -39,10 +34,10 @@ var About = React.createClass({
             </div>
             <div className="name">
               <h1>{this.state.personName}</h1>
-              <p>Entrepreneur / Designer / Developer</p>
+              <p>{Data.about.subtitle}</p>
             </div>
             <div className="about-text">
-              <p>{aboutText}</p>
+              <p>{Data.about.text}</p>
             </div>
           </div>
         </div>
