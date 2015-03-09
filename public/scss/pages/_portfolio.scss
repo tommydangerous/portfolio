@@ -14,7 +14,6 @@ $image-size: $spacing * 8;
     width: 100%;
     @include outer-container;
     .portfolio-item {
-      display: block;
       @include screen-xs {
         margin-bottom: $image-size * 0.5;
         @include span-columns(12);
@@ -97,6 +96,19 @@ $image-size: $spacing * 8;
           font-size: $font-size-normal-1;
           line-height: $font-size-normal-1 * 1.5;
           text-align: center;
+        }
+      }
+      .links {
+        color: $gray-medium-1;
+        margin-top: $spacing * 0.75;
+        text-align: center;
+        a {
+          color: $blue;
+          font-size: $font-size-normal-1;
+          &:hover {
+            color: $blue-hover;
+            text-decoration: underline;
+          }
         }
       }
     }

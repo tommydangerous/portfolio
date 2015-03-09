@@ -45,63 +45,69 @@ AppDispatcher.register(function(payload) {
 
 module.exports = PortfolioStore;
 
-_items["onmyblock"] = {
+_items['onmyblock'] = {
+  appStoreUrl: 'https://itunes.apple.com/us/app/onmyblock/id737199914?mt=8',
   description: 'Find, rent, and list the best-off campus housing through ' +
     'our online student marketplace.',
   count:    0,
-  href:     'http://onmyblock.com',
   id:       'onmyblock',
   imageUrl: 'img/onmyblock.png',
   name:     'OnMyBlock',
-  subtitle: 'Ruby on Rails / iOS'
+  subtitle: 'Ruby on Rails / iOS',
+  websiteUrl: 'onmyblock.com',
 };
-_items["dunzo"] = {
+_items['dunzo'] = {
+  appStoreUrl: 'https://itunes.apple.com/us/app/dunzo/id701772884?mt=8',
   description: 'Open the app and immediately begin writing down notes, ' +
     'thoughts, and reminders.',
   count:    0,
-  href:     'https://itunes.apple.com/us/app/dunzo/id701772884?mt=8',
   id:       'dunzo',
   imageUrl: 'img/dunzo.png',
   name:     'Dunzo',
-  subtitle: 'iOS'
+  subtitle: 'iOS',
+  websiteUrl: null,
 };
-_items["spadetree"] = {
+_items['spadetree'] = {
+  appStoreUrl: 'https://itunes.apple.com/us/app/spadetree/id686320991?mt=8',
   description: 'Find or become a tutor for kids K-12, teaching skills ' +
     'that are not typically taught in school.',
   count:    0,
-  href:     'http://spadetree.com',
   id:       'spadetree',
   imageUrl: 'img/spadetree.png',
   name:     'SpadeTree',
-  subtitle: 'Python / Django / iOS'
+  subtitle: 'Python / Django / iOS',
+  websiteUrl: 'spadetree.com',
 };
-_items["bite"] = {
+_items['bite'] = {
+  appStoreUrl: 'https://itunes.apple.com/us/app/bite-app/id661010278?mt=8',
   description: 'Know where and when your friends are eating and ' +
     'share with them your plans.',
   count:    0,
-  href:     'http://abiteapp.com',
   id:       'bite',
   imageUrl: 'img/bite.png',
   name:     'Bite',
-  subtitle: 'Ruby on Rails / iOS'
+  subtitle: 'Ruby on Rails / iOS',
+  websiteUrl: 'abiteapp.com',
 };
-_items["skimreads"] = {
+_items['skimreads'] = {
+  appStoreUrl: null,
   description: 'Save snippets of content from the web and ' +
     'discover what other people are reading.',
   count:    0,
-  href:     'http://skimreads.com',
   id:       'skimreads',
   imageUrl: 'img/skimreads.png',
   name:     'Skimreads',
-  subtitle: 'Python / Django'
+  subtitle: 'Python / Django',
+  websiteUrl: 'skimreads.com',
 };
-_items["flashingdeals"] = {
+_items['flashingdeals'] = {
+  appStoreUrl: null,
   description: 'Curated daily deals using an algorithm that finds ' +
     'the most popular deals around the web.',
   count:    0,
-  href:     'http://flashingdeals.com',
   id:       'flashingdeals',
   imageUrl: 'img/flashingdeals.png',
   name:     'FlashingDeals',
-  subtitle: 'Ruby on Rails'
+  subtitle: 'Ruby on Rails',
+  websiteUrl: 'flashingdeals.com',
 };

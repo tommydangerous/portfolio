@@ -330,83 +330,91 @@ section.contact {
       content: "";
       display: table;
       clear: both; }
-    .portfolio .items .portfolio-item {
-      display: block; }
-      @media screen and (min-width: 0px) and (max-width: 360px) {
-        .portfolio .items .portfolio-item {
-          margin-bottom: 80px;
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%; }
-          .portfolio .items .portfolio-item:last-child {
-            margin-right: 0; } }
-      @media screen and (min-width: 360px) and (max-width: 680px) {
-        .portfolio .items .portfolio-item {
-          margin-bottom: 80px;
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%; }
-          .portfolio .items .portfolio-item:last-child {
-            margin-right: 0; } }
-      @media screen and (min-width: 680px) {
-        .portfolio .items .portfolio-item {
-          margin-bottom: 160px;
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 31.76157%; }
-          .portfolio .items .portfolio-item:last-child {
-            margin-right: 0; }
-          .portfolio .items .portfolio-item:nth-child(3n) {
-            margin-right: 0; }
-          .portfolio .items .portfolio-item:nth-child(3n+1) {
-            clear: left; } }
-      .portfolio .items .portfolio-item .image {
-        border-radius: 80px;
-        height: 160px;
-        margin: 0 auto;
-        overflow: hidden;
-        padding: 30px;
-        width: 160px; }
-        .portfolio .items .portfolio-item .image img {
-          height: 100px;
-          width: 100px; }
-      .portfolio .items .portfolio-item#onmyblock .image {
-        background-color: #29b8e5; }
-      .portfolio .items .portfolio-item#dunzo .image {
-        background-color: black; }
-      .portfolio .items .portfolio-item#spadetree .image {
-        background-color: black; }
-      .portfolio .items .portfolio-item#bite .image {
-        background-color: #cf0404; }
-      .portfolio .items .portfolio-item#skimreads .image {
-        background-color: #282828; }
-      .portfolio .items .portfolio-item#flashingdeals .image {
-        background-color: #d6f9ff; }
-      .portfolio .items .portfolio-item .name {
+    @media screen and (min-width: 0px) and (max-width: 360px) {
+      .portfolio .items .portfolio-item {
+        margin-bottom: 80px;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .portfolio .items .portfolio-item:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 360px) and (max-width: 680px) {
+      .portfolio .items .portfolio-item {
+        margin-bottom: 80px;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .portfolio .items .portfolio-item:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 680px) {
+      .portfolio .items .portfolio-item {
+        margin-bottom: 160px;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .portfolio .items .portfolio-item:last-child {
+          margin-right: 0; }
+        .portfolio .items .portfolio-item:nth-child(3n) {
+          margin-right: 0; }
+        .portfolio .items .portfolio-item:nth-child(3n+1) {
+          clear: left; } }
+    .portfolio .items .portfolio-item .image {
+      border-radius: 80px;
+      height: 160px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 30px;
+      width: 160px; }
+      .portfolio .items .portfolio-item .image img {
+        height: 100px;
+        width: 100px; }
+    .portfolio .items .portfolio-item#onmyblock .image {
+      background-color: #29b8e5; }
+    .portfolio .items .portfolio-item#dunzo .image {
+      background-color: black; }
+    .portfolio .items .portfolio-item#spadetree .image {
+      background-color: black; }
+    .portfolio .items .portfolio-item#bite .image {
+      background-color: #cf0404; }
+    .portfolio .items .portfolio-item#skimreads .image {
+      background-color: #282828; }
+    .portfolio .items .portfolio-item#flashingdeals .image {
+      background-color: #d6f9ff; }
+    .portfolio .items .portfolio-item .name {
+      text-align: center; }
+      .portfolio .items .portfolio-item .name h1 {
+        color: #282828;
+        font-size: 27px;
+        font-weight: 400;
+        margin-top: 10px; }
+      .portfolio .items .portfolio-item .name p {
+        color: #77be77;
+        font-size: 18px;
+        margin-top: 5px; }
+    .portfolio .items .portfolio-item .description {
+      padding: 0 20px; }
+      .portfolio .items .portfolio-item .description .border {
+        background-color: gainsboro;
+        height: 1px;
+        margin: 20px auto;
+        width: 60%; }
+      .portfolio .items .portfolio-item .description p {
+        color: #6e6e6e;
+        font-size: 15px;
+        line-height: 22.5px;
         text-align: center; }
-        .portfolio .items .portfolio-item .name h1 {
-          color: #282828;
-          font-size: 27px;
-          font-weight: 400;
-          margin-top: 10px; }
-        .portfolio .items .portfolio-item .name p {
-          color: #77be77;
-          font-size: 18px;
-          margin-top: 5px; }
-      .portfolio .items .portfolio-item .description {
-        padding: 0 20px; }
-        .portfolio .items .portfolio-item .description .border {
-          background-color: gainsboro;
-          height: 1px;
-          margin: 20px auto;
-          width: 60%; }
-        .portfolio .items .portfolio-item .description p {
-          color: #6e6e6e;
-          font-size: 15px;
-          line-height: 22.5px;
-          text-align: center; }
+    .portfolio .items .portfolio-item .links {
+      color: #6e6e6e;
+      margin-top: 15px;
+      text-align: center; }
+      .portfolio .items .portfolio-item .links a {
+        color: #779ecb;
+        font-size: 15px; }
+        .portfolio .items .portfolio-item .links a:hover {
+          color: #6d94c1;
+          text-decoration: underline; }
 
 /*# sourceMappingURL=application.css.map */

@@ -2,13 +2,34 @@ var React = require('react');
 
 var PortfolioItem = React.createClass({
   render: function() {
+    var appStoreLink = undefined;
+    var divider      = undefined;
+    var websiteLink  = undefined;
+
+    var appStoreUrl = this.props.item.appStoreUrl;
+    if (appStoreUrl) {
+      appStoreLink = <a data-clicked={this.props.item.count}
+                        href={appStoreUrl}
+                        onClick={this._click}
+                        target="_blank">
+                        app store
+                    </a>
+    }
+    var websiteUrl = this.props.item.websiteUrl;
+    if (websiteUrl) {
+      websiteLink = <a data-clicked={this.props.item.count}
+                       href={"http://" + websiteUrl}
+                       onClick={this._click}
+                       target="_blank">
+                       {websiteUrl}
+                    </a>
+    }
+    if (appStoreUrl && websiteUrl) {
+      divider = ' / ';
+    }
+
     return (
-      <a className="portfolio-item"
-         data-clicked={this.props.item.count}
-         href={this.props.item.href}
-         id={this.props.item.id}
-         onClick={this._click}
-         target="_blank">
+      <div className="portfolio-item" id={this.props.item.id}>
         <div className="image">
           <img className="lazy"
                data-src={this.props.item.imageUrl}
@@ -23,7 +44,10 @@ var PortfolioItem = React.createClass({
           <div className="border"></div>
           <p>{this.props.item.description}</p>
         </div>
-      </a>
+        <div className="links">
+          {websiteLink}{divider}{appStoreLink}
+        </div>
+      </div>
     );
   },
 
