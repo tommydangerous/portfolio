@@ -1,8 +1,8 @@
 var Data = {
   about: {
-    backgroundImage: 'img/background-david.jpg',
+    backgroundImage: 'img/background.jpg',
     hello: 'iron sharpens iron',
-    image: 'img/person-david.jpg',
+    image: 'img/person.jpg',
     name: 'David Chau',
     subtitle: 'Entrepreneur / Leader / Mentor',
     text: 'Experienced leader with insatiable thirst for learning emerging ' +
