@@ -1,3 +1,9 @@
+## Setup
+```
+$ brew install node    # Install Node and NPM
+$ npm install -g bower # Install Bower
+```
+
 ## Development
 ```
 $ npm start      # Compile JS
@@ -10,3 +16,6 @@ Before deploying, compress assets.
 ```
 $ npm run gulp compress
 ```
+
+## Customization
+To customize all the text, images, items, etc edit the `app/Data.js` file.
