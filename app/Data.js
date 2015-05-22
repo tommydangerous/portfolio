@@ -6,10 +6,8 @@ var Data = {
     name: 'Tommy Dang',
     subtitle: 'Entrepreneur / Designer / Developer',
     text: 'I love solving problems by building mobile and web applications. ' +
-      'When I am not passionately coding, ' +
-      'I enjoy watching movies, working out, and investing. ' +
-      'My wife is the most important person in my life. ' +
-      'I care very deeply for my friends and family.'
+      'My interests include movies, working out, technology, stocks, data ' +
+      'mining, and machine learning.'
   },
   contact: {
     items: []
